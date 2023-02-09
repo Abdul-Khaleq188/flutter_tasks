@@ -41,16 +41,19 @@ class MyAppTest extends State<MyApp> {
                 Container(
                   margin: const EdgeInsets.only(top: 40),
                   padding: const EdgeInsets.all(20),
-
                   decoration: const BoxDecoration(
                       color: Colors.white,
-                      boxShadow: [BoxShadow(blurRadius: 20,offset: Offset(0, 10))]),
+                      boxShadow: [
+                        BoxShadow(blurRadius: 20, offset: Offset(0, 10))
+                      ]),
                   child: Column(
                     children: [
                       Container(
                         margin: const EdgeInsets.all(10),
                         child: TextFormField(
                           decoration: InputDecoration(
+                              hintText: 'Enter your email',
+                              label: const Text('Email'),
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(15))),
                         ),
@@ -59,6 +62,8 @@ class MyAppTest extends State<MyApp> {
                         margin: const EdgeInsets.all(10),
                         child: TextFormField(
                           decoration: InputDecoration(
+                              hintText: 'Enter password',
+                              label: const Text('Password'),
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(15))),
                         ),
